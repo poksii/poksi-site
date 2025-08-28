@@ -9,9 +9,9 @@ const config = {
   pageExtensions: ['tsx', 'mdx'],
   images: { formats: ['image/avif', 'image/webp'] },
   reactStrictMode: true,
-  output: 'export',                 // on exporte statique
-  eslint: { ignoreDuringBuilds: true },     // <-- ne bloque pas sur ESLint
-  typescript: { ignoreBuildErrors: true },  // <-- ne bloque pas sur TS
+  // on ignore ces checks pendant le build (facilite la CI)
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
 };
 
 export default withMDX(config);
