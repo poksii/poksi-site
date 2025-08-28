@@ -1,3 +1,5 @@
+'use client';
+
 import { Twitter, Mail, Link as LinkIcon, Newspaper, Rocket, Youtube, Github, MessageCircle, Gamepad2 } from "lucide-react";
 
 const BRAND = {
